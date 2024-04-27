@@ -7,19 +7,25 @@
 
   <fragment
     android:id="@+id/nav_home"
-    android:name="com.social.sefer.ui.home.HomeFragment"
-    android:label="@string/menu_home"
+    android:name="com.social.sefer.ui.views.fragments.HomeFragment"
+    android:label="@string/lbl_home"
     tools:layout="@layout/fragment_home" />
 
   <fragment
-    android:id="@+id/nav_gallery"
-    android:name="com.social.sefer.ui.gallery.GalleryFragment"
-    android:label="@string/menu_gallery"
-    tools:layout="@layout/fragment_gallery" />
+    android:id="@+id/nav_users"
+    android:name="com.social.sefer.ui.views.fragments.UsersFragment"
+    android:label="@string/lbl_users"
+    tools:layout="@layout/f_list" />
 
   <fragment
-    android:id="@+id/nav_slideshow"
-    android:name="com.social.sefer.ui.slideshow.SlideshowFragment"
-    android:label="@string/menu_slideshow"
-    tools:layout="@layout/fragment_slideshow" />
+    android:id="@+id/nav_profile"
+    android:name="com.social.sefer.ui.views.fragments.ProfileFragment"
+    android:label="@string/lbl_you"
+    tools:layout="@layout/f_list" />
+
+  <fragment
+    android:id="@+id/nav_shorts"
+    android:name="com.social.sefer.ui.views.fragments.ShortsFragment"
+    android:label="@string/lbl_shorts"
+    tools:layout="@layout/f_list" />
 </navigation>
