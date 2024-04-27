@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/icon_home"
+    android:title="@string/lbl_home" />
+
+  <item
+    android:id="@+id/nav_users"
+    android:icon="@drawable/icon_search"
+    android:title="@string/lbl_users" />
+
+  <item
+    android:id="@+id/nav_shorts"
+    android:icon="@drawable/icon_videos"
+    android:title="@string/lbl_shorts" />
+
+  <item
+    android:id="@+id/nav_community"
+    android:icon="@drawable/icon_community"
+    android:title="@string/lbl_community" />
+
+  <item
+    android:id="@+id/nav_profile"
+    android:icon="@drawable/ic_user"
+    android:title="@string/lbl_you" />
+</menu>
