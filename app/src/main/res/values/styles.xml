@@ -7,4 +7,9 @@
     <item name="android:textColor">?colorOnPrimary</item>
   </style>
 
+  <style name="Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+    <item name="android:background">?attr/colorSurface</item>
+    <item name="colorControlNormal">?android:textColorPrimary</item>
+  </style>
+
 </resources>
