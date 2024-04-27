@@ -1,6 +1,9 @@
+import java.util.Properties
+
 plugins {
   alias(libs.plugins.androidApplication)
   alias(libs.plugins.jetbrainsKotlinAndroid)
+  id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -12,7 +15,14 @@ android {
     minSdk = 24
     targetSdk = 34
     versionCode = 1
-    versionName = "1.0"
+    versionName = "0.1.0"
+
+    val localProperties = Properties()
+    localProperties.load(project.rootProject.file("local.properties").inputStream())
+
+    buildConfigField(
+      "String", "GOOGLE_CLIENT_ID", "\"${localProperties.getProperty("GOOGLE_CLIENT_ID")}\""
+    )
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
@@ -32,7 +42,9 @@ android {
   }
   buildFeatures {
     viewBinding = true
+    buildConfig = true
   }
+  buildToolsVersion = "34.0.0"
 }
 
 dependencies {
@@ -41,12 +53,45 @@ dependencies {
   implementation(libs.androidx.appcompat)
   implementation(libs.material)
   implementation(libs.androidx.constraintlayout)
+  implementation(libs.androidx.recyclerview)
+
+  implementation(libs.androidx.preference.ktx)
+  implementation(libs.androidx.core.splashscreen)
+  implementation(libs.androidx.swiperefreshlayout)
+
+  testImplementation(libs.junit)
+  androidTestImplementation(libs.androidx.junit)
+  androidTestImplementation(libs.androidx.espresso.core)
+
+  implementation(libs.circleimageview)
+
+  // coroutine
+  implementation(libs.kotlinx.coroutines.core)
+  implementation(libs.kotlinx.coroutines.android)
+
+  //
   implementation(libs.androidx.lifecycle.livedata.ktx)
   implementation(libs.androidx.lifecycle.viewmodel.ktx)
   implementation(libs.androidx.navigation.fragment.ktx)
   implementation(libs.androidx.navigation.ui.ktx)
 
-  testImplementation(libs.junit)
-  androidTestImplementation(libs.androidx.junit)
-  androidTestImplementation(libs.androidx.espresso.core)
+  // glide
+  implementation(libs.glide)
+//  implementation(libs.compiler)
+
+  // jackson
+  implementation(libs.jackson.databind)
+  implementation(libs.jackson.core)
+  implementation(libs.jackson.annotations)
+
+  // credentials
+  implementation(libs.googleid)
+  implementation(libs.androidx.credentials)
+  implementation(libs.androidx.credentials.play.services.auth)
+
+  // retrofit
+  implementation(libs.retrofit)
+  implementation(libs.converter.jackson)
+  implementation(libs.okhttp)
+  implementation(libs.logging.interceptor)
 }
