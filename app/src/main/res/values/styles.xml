@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="snackBar" parent="Widget.MaterialComponents.Snackbar">
+    <item name="backgroundTint">?colorPrimary</item>
+    <item name="elevation">0dp</item>
+    <item name="android:textColor">?colorOnPrimary</item>
+  </style>
+
+</resources>

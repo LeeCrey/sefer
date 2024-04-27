@@ -7,4 +7,35 @@
   <color name="teal_700">#FF018786</color>
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
+
+  <color name="colorRed">#F8473E</color>
+  <color name="colorError">#af001d</color>
+  <color name="colorGreen">#25A773</color>
+  <color name="border">#f1f1f1</color>
+
+  <color name="windows">#eef9ff</color>
+  <color name="link">#15b0eb</color>
+  <color name="text_primary">#1e2739</color>
+  <color name="primaryDark">#5ea3cd</color>
+
+  <!--  4dc2f8-->
+  <color name="primary">#40B3E0</color>
+  <color name="onPrimary">@color/white</color>
+
+  <color name="secondary">#202636</color>
+  <color name="onSecondary">#c4ccd8</color>
+
+  <color name="surface">@color/white</color>
+  <color name="txtColorOnSurface">#F3F3F3</color>
+
+  <color name="colorDarkLine">#0c1217</color>
+  <color name="colorDarkLineDarker">#05080a</color>
+  <color name="colorLightGrey">#d4e9fc</color>
+  <color name="colorLightGreyTransparent">#99d4e9fc</color>
+  <color name="colorRedLight">#FFffa3c4</color>
+  <color name="colorGreenDarkerAlpha_10">#1A002626</color>
+
+  <!-- CODE  -->
+  <color name="codeBg">#131524</color>
+  <color name="codeText">#6b757f</color>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primaryDark">#202833</color>
+  <color name="link">#2AABEE</color>
+  <color name="border">#222C3D</color>
+  <color name="text_primary">#fdfdfd</color>
+  <color name="windows">#1d1e32</color>
+
+  <!--  PRIMARY  -->
+  <color name="primary">#89bae2</color>
+  <color name="onPrimary">#fff</color>
+
+  <!--  SURFACE  -->
+  <color name="surface">#0c172d</color>
+  <color name="txtColorOnSurface">#d8dade</color>
+
+  <!--  SECONDARY  -->
+  <color name="secondary">#00d676</color>
+  <color name="onSecondary">#ffffff</color>
+
+  <color name="colorError">#dc5b5e</color>
+</resources>
