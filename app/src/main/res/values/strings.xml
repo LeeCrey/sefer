@@ -13,4 +13,9 @@
   <string name="lbl_community">Community</string>
   <string name="lbl_you">You</string>
   <string name="lbl_users">Users</string>
+  <string name="others">Others</string>
+  <string name="share">Share</string>
+  <string name="lbl_rate">Rate</string>
+  <string name="lbl_faq">FAQ</string>
+  <string name="send_to">Share to</string>
 </resources>
