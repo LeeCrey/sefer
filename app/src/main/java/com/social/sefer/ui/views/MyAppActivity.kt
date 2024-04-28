@@ -3,7 +3,6 @@ package com.social.sefer.ui.views
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Build
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.social.sefer.utilities.ApplicationHelper
 import com.social.sefer.utilities.LocaleHelper
