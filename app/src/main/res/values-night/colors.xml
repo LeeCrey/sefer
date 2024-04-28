@@ -12,7 +12,6 @@
 
   <!--  SURFACE  -->
   <color name="surface">#0c172d</color>
-  <color name="txtColorOnSurface">#d8dade</color>
 
   <!--  SECONDARY  -->
   <color name="secondary">#00d676</color>
